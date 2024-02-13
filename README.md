@@ -1,5 +1,5 @@
 # DeepBEP
-DeepBEP is an ESM2-based deep learning framework for bacteria essential protein prediction.
+DeepBEP(Deep learning framework for Bacteria Essential protein Prediction) is an ESM2-based deep learning framework for bacteria essential protein prediction.
 Detailed description can be found in the following paper:
 Exploring the Application of  Deep Learning Model for Essential Protein Classification in Bacteria: A Comprehensive Study of  Cross-Organism Research
 
