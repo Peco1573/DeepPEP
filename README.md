@@ -5,9 +5,13 @@ Exploring the Application of  Deep Learning Model for Essential Protein Classifi
 
 ## Requirment
 torch 1.11.0+cu113
+
 numpy 1.23.5
+
 pandas 1.5.2
+
 sklearn 1.2.1
+
 
 ## Usage
 
