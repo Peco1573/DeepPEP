@@ -12,6 +12,7 @@ sklearn == 1.2.1<br>
 
 ## Usage
 If you want to predict the essentiality of your bacteria protein sequences, please do the following steps: <br>
+
 Step1: ESM2 representation<br>
 Download the code to your computer, paste your fasta file and pretrained ESM2 model to the ESM2_representation file, and run 'representation.py'.<br>
 fasta file: containing your protein sequences<br>
