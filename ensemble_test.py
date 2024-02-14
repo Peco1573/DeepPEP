@@ -50,6 +50,7 @@ if __name__ == '__main__':
     df_output = pd.DataFrame()
     df_output['information'] = df_representation['name'].tolist()
     df_output['score'] = df_score['score'].tolist()
+    df_output['essential'] = df_output['score'].apply(lambda x: 1 if x > 0.5 else 0)
     df_output.to_csv('./output.csv')
 
 
