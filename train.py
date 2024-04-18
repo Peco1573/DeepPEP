@@ -224,7 +224,7 @@ if __name__ == '__main__':
                       'DEG1054', 'DEG1055', 'DEG1056', 'DEG1057', 'DEG1058', 'DEG1059', 'DEG1060', 'DEG1062', 'DEG1063', 'DEG1064',
                       'DEG1065', 'DEG1066', 'DEG1067', 'DEG1068']
     columns = ['acc', 'precision', 'recall', 'test_F1', 'auc', 'auprc', 'mcc', 'repeat', 'k', 'epoch', 'model']
-    file_path = '../prokaryote_essential.pt'
+    file_path = './prokaryote_essential.pt'
     df_log = pd.DataFrame(columns=columns)
     loss_weight = torch.tensor(np.array([1, 1]), dtype=torch.float)
     loss_gamma = 2
