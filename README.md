@@ -20,23 +20,20 @@ Download ESM2 pretrained model from  https://dl.fbaipublicfiles.com/fair-esm/mod
 Note that ESM2 pretrained model is about 30GB. The representation process is run using CPU and requires a large amount of memory (it is recommended to reserve 60-100GB of memory)<br>
 Download our training set at https://pan.baidu.com/s/1_y8Cu7wDzWrnJk8RGEUJFw?pwd=1111 and unzip our dataset to './DeepPEP/ directory' <br>
 run the following code:
+
+    cd DeepPEP
     python ESM2_representation.py your_protein.fasta
+    
 It will create several representations in './DeepPEP/representation_result/'  <br>
 
 Step2: Training <br>
 The trained model will be saved at file folder './DeepPEP/model_select/'  <br>
+
     python train.py
 
-
 Step3: Test <br>
+
     python test.py
-The result.csv containing sequence name, predicted essentiality and predicted score. <br>
+    
+The **result.csv** containing sequence name, predicted essentiality and predicted score. <br>
 
-
-
-## Contact
-#### 3. Train model
-The trained models will be saved at file folder '../protein/saved_model/HCT-116/'.
-
-    cd code
-    python main.py protein --cell_line HCT-116 --gpu 0
