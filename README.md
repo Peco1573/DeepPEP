@@ -35,3 +35,8 @@ The result.csv containing sequence name, predicted essentiality and predicted sc
 
 
 ## Contact
+#### 3. Train model
+The trained models will be saved at file folder '../protein/saved_model/HCT-116/'.
+
+    cd code
+    python main.py protein --cell_line HCT-116 --gpu 0
