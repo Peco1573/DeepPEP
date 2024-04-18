@@ -19,7 +19,7 @@ Step1: ESM2 representation of your protein sequences<br>
 Download ESM2 pretrained model from  https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t48_15B_UR50D.pt  to './DeepPEP/ directory' <br>
 Note that ESM2 pretrained model is about 30GB. The representation process is run using CPU and requires a large amount of memory (it is recommended to reserve 60-100GB of memory)<br>
 Download our training set at https://pan.baidu.com/s/1_y8Cu7wDzWrnJk8RGEUJFw?pwd=1111 and unzip our dataset to './DeepPEP/ directory' <br>
-run the following code:
+run the following code('the '**your_protein.fasta**' is your own protein file'):
 
     cd DeepPEP
     python ESM2_representation.py your_protein.fasta
@@ -29,10 +29,11 @@ It will create several representations in './DeepPEP/representation_result/'  <b
 Step2: Training <br>
 The trained model will be saved at file folder './DeepPEP/model_select/'  <br>
 
+    cd DeepPEP
     python train.py
 
 Step3: Test <br>
-
+    cd DeepPEP
     python test.py
     
 The **result.csv** containing sequence name, predicted essentiality and predicted score. <br>
