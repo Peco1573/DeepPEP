@@ -36,7 +36,11 @@ def fasta_to_dataframe(file_name):
 
 
 df = fasta_to_dataframe(fasta_file)
-
+if not os.path.exists('./ESM2_representation'):
+    os.mkdir('./ESM2_representation')
+else:
+    print('Please delete ' + './ESM2_representation')
+    sys.exit()
 model, alphabet = esm.pretrained.load_model_and_alphabet_local('./esm2_t48_15B_UR50D.pt')
 batch_converter = alphabet.get_batch_converter()
 model.eval()  # disables dropout for deterministic results
@@ -52,7 +56,7 @@ for i in range(len(df)):
     token_representations = results['representations'][48]
     token_representation = torch.squeeze(token_representations)
     token_representation = torch.mean(token_representation, dim=0)
-    name = './ESM2_representation_result/' + label + '.pt'
+    name = './ESM2_representation/' + label + '.pt'
     dict1 = {label: token_representation}
     torch.save(dict1, name)
     print(i)
