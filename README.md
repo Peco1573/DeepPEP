@@ -33,6 +33,7 @@ The trained model will be saved at file folder './DeepPEP/model_select/'  <br>
     python train.py
 
 Step3: Test <br>
+
     cd DeepPEP
     python test.py
     
