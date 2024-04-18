@@ -24,7 +24,7 @@ run the following code('the '**your_protein.fasta**' is your own protein file'):
     cd DeepPEP
     python ESM2_representation.py your_protein.fasta
     
-It will create several representations in './DeepPEP/representation_result/'  <br>
+It will create several representations in './DeepPEP/ESM2_representation/'  <br>
 
 Step2: Training <br>
 The trained model will be saved at file folder './DeepPEP/model_select/'  <br>
