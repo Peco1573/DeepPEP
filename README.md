@@ -12,6 +12,7 @@ sklearn == 1.2.1<br>
 If you want to predict the essentiality of your bacteria protein sequences, please do the following steps using linux-64 platform: <br>
 
 Step1: ESM2 representation of your protein sequences<br>
+
     git clone https://github.com/Peco1573/DeepPEP.git
     cd DeepPEP
 
