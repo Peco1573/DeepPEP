@@ -37,5 +37,5 @@ Step3: Test <br>
     cd DeepPEP
     python test.py
     
-The **result.csv** containing sequence name, predicted essentiality and predicted score. <br>
+It will create a 'result.csv' to './DeepPEP/'    The **result.csv** containing sequence name, predicted essentiality and predicted score. <br>
 
