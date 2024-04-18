@@ -12,9 +12,10 @@ sklearn == 1.2.1<br>
 If you want to predict the essentiality of your bacteria protein sequences, please do the following steps using linux-64 platform: <br>
 
 Step1: ESM2 representation of your protein sequences<br>
+    '''
     git clone https://github.com/Peco1573/DeepPEP.git
     cd DeepPEP
-
+    '''
 Download ESM2 pretrained model from  https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t48_15B_UR50D.pt  to './DeepPEP/ directory' <br>
 Note that ESM2 pretrained model is about 30GB. The representation process is run using CPU and requires a large amount of memory (it is recommended to reserve 60-100GB of memory)<br>
 Download our training set at https://pan.baidu.com/s/1_y8Cu7wDzWrnJk8RGEUJFw?pwd=1111 and unzip our dataset to './DeepPEP/ directory' <br>
