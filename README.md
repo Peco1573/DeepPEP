@@ -27,6 +27,10 @@ run the following code('the '**your_protein.fasta**' is your own protein file'):
 It will create several representations in './DeepPEP/ESM2_representation/'  <br>
 
 Step2: Training <br>
+
+The pretrained DeepPEP model weights can be downloaded from the following Google Drive link: https://drive.google.com/drive/folders/1z4M9GBmZaEq57HLoKW-SvaxQPrMn7Z0K?usp=drive_link <br>
+After downloading, please place the model weights into './DeepPEP/model_select/'  <br>
+
 The trained model will be saved at file folder './DeepPEP/model_select/'  <br>
 
     cd DeepPEP
